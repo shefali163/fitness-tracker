@@ -4,7 +4,6 @@ import { Link, Redirect } from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import { Header } from './Header';
-import { Footer } from './Footer';
 import './SignIn.css';
 
 import './App.css';
@@ -93,8 +92,6 @@ export class SignIn extends Component {
                     </div>
                     <p>New to Fitness Tracker? <Link to={ROUTES.SignUp}> Sign Up! </Link> </p>
                 </div>
-                
-                <Footer />
             </div>
         );
     }

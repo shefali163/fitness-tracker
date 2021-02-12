@@ -3,7 +3,6 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import { Navigation } from './Navigation';
 import { Header } from './Header';
-import { Footer } from './Footer';
 import { DataTable } from './DataTable';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -111,8 +110,6 @@ export class InputTable extends Component {
                         out what they are searching for and or change how the chart has been sorted through by clicking on the
                         column titles. The user is also allowed to delete and edit the meal name and calories on whichever row they choose
                         to edit.</p>
-
-                    <p>NOTE: Users may need to scroll left on mobile devices to view the entire table.</p>
                     <div className="flex-start">
                         <h3> Pick a Meal Type: </h3>
                         <select
@@ -137,8 +134,6 @@ export class InputTable extends Component {
 
                     <DataTable />
                 </div>
-
-                <Footer />
             </div>
         )
     }

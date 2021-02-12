@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { Navigation } from './Navigation';
 import { Header } from './Header';
-import { Footer } from './Footer';
 import { FormGroup, Label } from 'reactstrap';
 import { ROUTES } from './constants';
 import firebase from 'firebase/app';
@@ -196,7 +195,6 @@ export class Settings extends Component {
                     </div>
                     <p>Base metabolic rate: <span id="totalCals">{this.state.cal}</span> kcal per day</p>
                 </div>
-                <Footer />
             </div >
         )
     }
