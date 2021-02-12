@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import { Header } from './Header';
-import { Footer } from './Footer';
 import { FormGroup, Label } from 'reactstrap';
 import { ROUTES } from './constants';
 import './App.css';
@@ -161,7 +160,6 @@ export class SignUp extends Component {
                         <Link to={ROUTES.SignIn}><button className="btn btn-default" type="button">CANCEL</button></Link>
                     </div>
                 </div>
-                <Footer />
             </div >
         );
     }

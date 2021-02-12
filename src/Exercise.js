@@ -7,7 +7,6 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import { Doughnut } from 'react-chartjs-2';
 import { Header } from './Header';
-import { Footer } from './Footer';
 import { Navigation } from './Navigation';
 import { ExerciseTable } from './ExerciseTable';
 import './Exercise.css';
@@ -156,7 +155,7 @@ export class Exercise extends Component {
           the exercise and calories that they perform. </p> 
 
           <p> The input box requires users to write in <strong> natural
-          language</strong> format. For example, you can simply type in <i>"Ran for 20 minutes and boxed for an hour"</i> and we will calculate the result for you. </p> 
+          language</strong> format. For example, you can simply type in <i>"Ran for 20 minutes and boxed for an hour"</i> and it will calculate the result for you. </p> 
           <p>The exercise and calories burned
           for each exercise that the user records will be put into the table below. </p>
           <p>There will be a <strong>doughnut chart</strong> that gets created at the bottom of the page when the user enters their exercises in order 
@@ -171,7 +170,6 @@ export class Exercise extends Component {
           <ExerciseTable />
           <Doughnut data={this.state.data} />
         </div>
-        <Footer />
       </div>
     );
   }
